@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  animation: background-change 2s infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  padding: 4rem 6rem;
+  animation: box-background-change 2s infinite;
+  border-radius: 0.25rem;
+}
+
+@keyframes background-change {
+  0%,
+  100% {
+    background-color: white;
+  }
+
+  50% {
+    background-color: black;
+  }
+}
+
+@keyframes box-background-change {
+  0%,
+  100% {
+    background-color: black;
+    color: white;
+    box-shadow: wheat 0px 1px 4px, wheat 0px 0px 0px 3px;
+  }
+
+  50% {
+    background-color: white;
+    color: black;
+    box-shadow: gray 0px 1px 4px, gray 0px 0px 0px 3px;
+  }
+}
